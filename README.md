@@ -12,7 +12,7 @@
 </p>
 
 <div align="center">
-<a href="https://fashionmanagementt.netlify.app/login">⚙️See how it works</a>
+<a href="https://fashionmanagementt.netlify.app">⚙️See how it works</a>
 </div>  
 
 <br>
