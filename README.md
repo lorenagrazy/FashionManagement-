@@ -1,7 +1,7 @@
 <h1 align="center" font-size="20px">Fashion Management</h1>
 
 <div align="center">
-  Project developed using Angular 16
+  Project developed using Angular 15
 </div>
 <br>
 
