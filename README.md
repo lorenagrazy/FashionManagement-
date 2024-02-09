@@ -5,7 +5,7 @@
 </div>
 <br>
 
-<h1 align="center" > :hammer: Project Operation </h1>
+<h1 align="center" > :gear: Project Operation </h1>
 
 <p align="center" >
 <img  width="500px" src="/fashionmanagement.png" alt="model" >
