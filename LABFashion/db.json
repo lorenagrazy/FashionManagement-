@@ -1,0 +1,64 @@
+{
+  "modelos": [
+    {
+      "nome": "Saia Filó",
+      "responsavel": "Maria Loise Dias",
+      "colecao": "Carrano",
+      "tipo": "Saia",
+      "bordado": "sim",
+      "estampa": "nao",
+      "id": "1680272794739"
+    },
+    {
+      "nome": "Bolsa Lizza",
+      "responsavel": "Tenorio Cazarrano Mautta",
+      "colecao": "Santa Lolla",
+      "tipo": "Bolsa",
+      "bordado": "sim",
+      "estampa": "nao",
+      "id": "1680272834516"
+    }
+  ],
+  "colecoes": [
+    {
+      "colecao": "Tralalá",
+      "marca": "Kings",
+      "responsavel": "Gabriela Mendes",
+      "orcamento": "1010",
+      "estacaolancamento": "Primavera",
+      "anolancamento": "2027",
+      "modelos": "100",
+      "id": "1680271080607"
+    },
+    {
+      "colecao": "Perfeita Brisa",
+      "marca": "Lollita Pimenta",
+      "responsavel": "Mauro Nunnes",
+      "orcamento": "1020",
+      "estacaolancamento": "Inverno",
+      "anolancamento": "2022",
+      "modelos": "100",
+      "id": "1680271326126"
+    },
+    {
+      "colecao": "Flor Gerbera",
+      "marca": "Trend Dolls",
+      "responsavel": "Liene August Most",
+      "orcamento": "2500",
+      "estacaolancamento": "Primavera",
+      "anolancamento": "2025",
+      "modelos": "100",
+      "id": "1680272040272"
+    },
+    {
+      "colecao": "Linda Maré",
+      "marca": "Cairo Biza",
+      "responsavel": "Tatiana Correia ",
+      "orcamento": "9000",
+      "estacaolancamento": "Verão",
+      "anolancamento": "2022",
+      "modelos": "100",
+      "id": "1680272252459"
+    }
+  ]
+}

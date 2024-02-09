@@ -1,0 +1,92 @@
+<div class="container mb-5 mt-5 ">
+  <div class="col-md-10 ml-auto px-5 py-5">
+    <h5 class=" mb-0 mt-5">Criar Modelo</h5>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <br>
+    <div class="col-md-9 ml-auto mt-0">
+      <div class="card p-3 mb-2">
+        <div class="mt-2">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col">
+                <input formControlName="nome" type="text" class="form-control mb-5 mt-3" placeholder="Nome do Modelo">
+              </div>
+              <div class="col">
+                <select formControlName="tipo" class="form-select form-select mb-5 mt-3 form-control"
+                  aria-label=".form-select-lg example">
+                  <option value="" disabled selected>Tipo do Modelo</option>
+                  <option value="Bermuda">Bermuda</option>
+                  <option value="Biquiní">Biquiní</option>
+                  <option value="Bolsa">Bolsa</option>
+                  <option value="Boné">Boné</option>
+                  <option value="Calça">Calça</option>
+                  <option value="Calçados">Calçados</option>
+                  <option value="Camisa">Camisa</option>
+                  <option value="Paletó">Paletó</option>
+                  <option value="Saia">Saia</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <select formControlName="colecao" class="form-select form-select mb-3 form-control"
+                  aria-label=".form-select-lg example">
+                  <option value="" disabled selected>Selecionar coleção</option>
+                  <option value="Maria Filó">Maria Filó</option>
+                  <option value="Santa Lolla">Santa Lolla</option>
+                  <option value="Nike">Nike</option>
+                  <option value="Adidas">Adidas</option>
+                  <option value="Via Mia">Via Mia</option>
+                  <option value="Carrano">Carrano</option>
+                  <option value="Ave Rara">Ave Rara</option>
+                </select>
+              </div>
+              <div class="col">
+                <input formControlName="responsavel" name="responsavel" type="text" class="form-control mb-3"
+                  placeholder="Responsável pelo modelo">
+              </div>
+            </div>
+            <div class="mt-3   ">
+              <div class="row">
+                <div class="col">
+                  <p class="text-body py-2">Possui bordado?</p>
+                  <div class="form-check form-check-inline ">
+                    <label class="form-check-label px-3" for="bordado">sim</label>
+                    <input formControlName="bordado" class="form-check-input-inline" type="radio" name="bordado"
+                      value="sim">
+                  </div>
+                  <div class="form-check form-check-inline pb-3">
+                    <label class="form-check-label px-3" for="bordado">não</label>
+                    <input formControlName="bordado" class="form-check-input-inline" type="radio" name="bordado"
+                      value="não">
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="text-body  py-2">Possui estampa?</p>
+                  <div class="form-check form-check-inline">
+                    <input formControlName="estampa" name="estampa" value="sim"
+                      class="form-check-input-inline form-control " type="radio">
+                    <label class="form-check-label px-3" for="estampa">sim</label>
+                  </div>
+                  <div class="form-check form-check-inline  ">
+                    <input formControlName="estampa" name="estampa" class="form-check-input-inline form-control "
+                      type="radio" value="nao">
+                    <label class="form-check-label  px-3" for="estampa">não</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center text-lg-start btn-bot ">
+              <button type="submit" class="btn btn-primary float-right" [disabled]="!form.valid">Salvar</button>
+              <button routerLink="/menu/anchor/template-listing" type="button"
+                class="btn btn-secondary float-right ">Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

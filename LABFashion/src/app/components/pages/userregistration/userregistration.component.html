@@ -1,0 +1,63 @@
+<div class=" user login">
+  <section class="h-100">
+    <div class="container h-100">
+      <div class="row justify-content-md-center h-100">
+        <div class="card-wrapper">
+          <div class="brand">
+            <img src="../../../../assets/empresa.png" alt="logo">
+          </div>
+          <div class="card fat">
+            <div class="card-body">
+              <h4 class="card-title">Sign Up</h4>
+              <h5>Insira seus dados para criar uma conta</h5>
+              <form (submit)="onSubmit()" class="my-login-validation" [formGroup]="userForm" novalidate="">
+                <div class="form-group">
+                  <label for="name"></label>
+                  <input id="name" type="text" class="form-control" name="name" formControlName="name" required
+                    autofocus placeholder="Nome">
+                  <div *ngIf="getErrorMessage('name') !== ''">{{ getErrorMessage('name') }}</div>
+                  <label for="company"></label>
+                  <input id="company" type="text" class="form-control" name="company" formControlName="company" required
+                    autofocus placeholder="Empresa">
+                  <div *ngIf="getErrorMessage('company') !== ''">{{ getErrorMessage('company') }}</div>
+                  <label for="cnpj"></label>
+                  <input id="cnpj" type="text" class="form-control" name="cnpj" formControlName="cnpj" required
+                    autofocus placeholder="CNPJ">
+                  <div *ngIf="getErrorMessage('cnpj') !== ''">{{ getErrorMessage('cnpj') }}</div>
+                  <label for="email"></label>
+                  <input id="email" type="email" class="form-control" name="email" formControlName="email" required
+                    autofocus placeholder="Informe seu e-mail">
+                  <div *ngIf="getErrorMessage('email') !== ''">{{ getErrorMessage('email') }}</div>
+                  <div class="form-row pt-3">
+                    <div class="col">
+                      <input type="password" id="password" class="form-control" name="password"
+                        formControlName="password" required placeholder="Senha" (input)="onPasswordInput()">
+                      <div *ngIf="getErrorMessage('password') !== ''">{{ getErrorMessage('password') }}</div>
+                    </div>
+                    <div class="col">
+                      <input type="password" id="passwordConfirmation" class="form-control" name="passwordConfirmation"
+                        formControlName="passwordConfirmation" required placeholder="Confirmar senha"
+                        (input)="onPasswordConfirmationInput()">
+                      <div *ngIf="getErrorMessage('passwordConfirmation') !== ''">{{
+                        getErrorMessage('passwordConfirmation') }}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                </div>
+                <div class="form-group m-0">
+                  <button type="submit" class="btn btn-primary btn-block">Criar Conta</button>
+                </div>
+              </form>
+              <div class="all">
+                <div class="mt-4 text-center">
+                  Retornar para a tela inicial: <a routerLink="/login"> Login</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

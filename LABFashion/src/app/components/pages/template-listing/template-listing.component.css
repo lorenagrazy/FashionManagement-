@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 25px;
+  gap: 40px;
+  position: relative;
+  width: 350px;
+  height: 180px;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+table th {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2C2C2C;
+  text-align: center;
+}
+
+table td {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #9395A3;
+}
+
+h5 {
+  width: 148px;
+  height: 34px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #2C2C2C;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+.heading {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #0073CF;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  body {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  h5 {
+    font-size: 24px;
+    line-height: 29px;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  table th {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  table td {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

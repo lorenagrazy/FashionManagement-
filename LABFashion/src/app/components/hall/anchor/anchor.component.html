@@ -1,0 +1,15 @@
+<div class="navbar anchor">
+  <div class="dropdown navbar-dropdown">
+    <img src="assets/alerta.svg " alt="iconealerta" class="icon-small px-5" id="alerta">
+    <img src="assets/lorenaico.jpg" alt="lorenaavatar" class="imagem navbar-imagem ">
+    <img src="assets/dropdown.svg " alt="iconealerta" class="icon-small px-3" id="iconedealerta" data-toggle="dropdown">
+    <div class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" (click)="goToAccountPage()"><img src="assets/conta.svg" alt="iconeconta"
+          class="icon small px-3">Conta</a>
+      <a class="dropdown-item" (click)="goToSettingsPage()"><img src="assets/configuracoes.svg" alt="iconeconfig"
+          class="icon small px-3">Configurações</a>
+      <a class="dropdown-item" (click)="logout()"><img src="assets/sair.svg" alt="iconesair"
+          class="icon small px-3">Sair</a>
+    </div>
+  </div>
+</div>

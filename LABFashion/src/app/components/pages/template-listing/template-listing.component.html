@@ -1,0 +1,38 @@
+<div class="container mb-3 mt-5">
+  <div class="col-md-10 ml-auto px-5 py-5">
+    <button routerLink="/menu/anchor/model-registration" type="button"
+      class="heading btn-lg btn-primary float-right mb-2 mt-5">Criar Modelo</button>
+    <h5 class="mb-2 mt-5 ">Modelos</h5>
+    <br>
+    <div class="row">
+      <br>
+      <div class=" col-md-11 mt-3 ml-auto">
+        <div class="card p-3 mb-2">
+          <div class="d-flex justify-content-between"></div>
+          <div class="mt-2 table-responsive">
+            <table class="table">
+              <thead class="titles">
+                <tr>
+                  <th scope="col" class="colecao"></th>
+                  <th scope="col" class="responsavel">ModeloID</th>
+                  <th scope="col" class="responsavel">Nome do Modelo</th>
+                  <th scope="col" class="modelos">Responsável</th>
+                  <th scope="col" class="orcamento">Coleção</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let modelo of modelo" (click)="irParaEdicao(modelo.id)">
+                  <th scope="row"></th>
+                  <td>{{ modelo.id }}</td>
+                  <td>{{ modelo.nome }}</td>
+                  <td>{{ modelo.responsavel }}</td>
+                  <td>{{ modelo.colecao }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
