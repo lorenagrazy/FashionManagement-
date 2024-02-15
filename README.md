@@ -1,18 +1,18 @@
 <h1 align="center" font-size="20px">Fashion Management</h1>
 
 <div align="center">
-  Project developed using Angular 16
+  Project developed using Angular 15
 </div>
 <br>
 
-<h1 align="center" > :hammer: Project Operation </h1>
+<h1 align="center" > :gear: Project Operation </h1>
 
 <p align="center" >
 <img  width="500px" src="/fashionmanagement.png" alt="model" >
 </p>
 
 <div align="center">
-<a href="https://fashionmanagementt.netlify.app/login">⚙️See how it works</a>
+<a href="https://fashionmanagementt.netlify.app">⚙️See how it works</a>
 </div>  
 
 <br>
