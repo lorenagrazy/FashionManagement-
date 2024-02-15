@@ -13,9 +13,13 @@ body {
   width: 480px;
   height: 407px;
   left: 50%;
-  top: 35%;
+  top: 40%;
   transform: translate(-50%, -50%);
 }
+
+
+
+
 
 .login h4 {
   font-size: 24px;
@@ -115,6 +119,7 @@ body {
   border-width: 2.3px;
 }
 
+
 @media screen and (max-width: 425px) {
   .login {
     width: 90%;
@@ -122,17 +127,11 @@ body {
   }
 
   .login .card-wrapper {
-    width: 100%;
-    margin: 0 auto;
+    width: 400px;
+    margin: 6rem auto;
   }
 }
 
-@media screen and (max-width: 320px) {
-  .login .card.fat {
-    padding: 0;
-  }
+  
 
-  .login .card.fat .card-body {
-    padding: 15px;
-  }
-}
+

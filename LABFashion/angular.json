@@ -89,15 +89,23 @@
               "src/favicon.ico",
               "src/assets",
               {
-                "glob":"_redirects",
+                "glob": "redirects",
                 "input": "src",
-                "output":"/"
-              	}
+                "output": "/"
+              }
             ],
             "styles": [
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/labfashion",
+            "netlifyToken": "",
+            "siteId": ""
           }
         }
       }
