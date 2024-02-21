@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 body {
   margin: 0;
@@ -12,8 +12,8 @@ body {
 }
 
 .navbar {
-  z-index: 100;
-  background-color: #FFFFFF;
+  z-index: 8;
+  background-color: #ffffff;
   height: 50px;
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@ body {
 
 .navbar-links a {
   text-decoration: none;
-  color: #2B2C33;
+  color: #2b2c33;
   opacity: 0.6;
   margin-right: 20px;
 }
@@ -47,7 +47,7 @@ body {
 @media only screen and (max-width: 600px) {
   .navbar {
     height: 80px;
-    justify-content: center;
+    justify-content: right;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -60,6 +60,12 @@ body {
   .navbar-imagem {
     width: 40px;
     height: 40px;
+  }
+  .dropdown-menu {
+    font-size: 15px;
+  }
+  .icon small {
+    width: 0.6rem;
   }
 }
 

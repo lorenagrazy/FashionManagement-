@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 body {
   width: 84px;
@@ -6,28 +6,34 @@ body {
   line-height: 19px;
   display: flex;
   align-items: center;
-  background: #EBF0FA;
+  background: #ebf0fa;
   height: 19px;
   font-style: normal;
   font-weight: 500;
 }
+.sidebar-header {
+  margin-top: 5rem;
+}
 .img {
   width: 3rem;
   right: 3rem;
+  position: absolute;
+  margin-right: 4.5rem;
+  transition: width 0.3s;
 }
 
-#menu {
+.wrapper {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: 1000;
-  min-width: 250px;
-  max-width: 250px;
-  background: #FFFFFF;
-  color: #A4A4A4;
-  transition: all 0.3s;
+  z-index: 9;
+  min-width: 46px;
+  width: 250px;
+  background: #ffffff;
+  color: #a4a4a4;
   box-shadow: 0px 1px 5px rgba(183, 183, 183, 0.4);
+  transition: width 0.3s;
 }
 
 a,
@@ -47,11 +53,10 @@ h1 {
   line-height: 17px;
   display: flex;
   align-items: center;
-  color: #B4B6C1;
-}
-
-#menu.active {
-  margin-left: -200px;
+  color: #b4b6c1;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  transition: width 0.3s;
 }
 
 #menu ul.components {
@@ -59,6 +64,7 @@ h1 {
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
+  transition: width 0.3s;
 }
 
 #menu ul li a {
@@ -67,38 +73,69 @@ h1 {
   display: block;
   display: flex;
   flex-direction: column;
+  transition: width 0.3s;
 }
 
 #menu ul li a:hover {
-  padding: 30px 30px;
+  padding: 25px 30px;
   gap: 20px;
-  color: #FFFFFF;
-  background: #0073CF;
+  color: #ffffff;
+  background: #0073cf;
   border-radius: 7px;
 }
 
 li {
-
-  padding: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  transition: width 0.3s;
 }
 
-#content {
-  width: 100%;
-  padding: 20px;
-  min-height: 100vh;
-  transition: all 0.3s;
+.toggle-button {
+  display: block;
+  margin-top: 1rem;
+}
+#menu {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin-top: 4rem;
 }
 
-@media (max-width: 768px) {
-  #menu {
-    margin-left: -250px;
+.wrapper.collapsed #menu {
+  width: 84px;
+}
+.toggle-button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .toggle-button {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1100;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #b4b6c1;
   }
-
-  #menu.active {
-    margin-left: 0;
+  .wrapper.collapsed .toggle-button {
+    right: calc((150px - 84px) + 10px);
+  }
+  .wrapper.collapsed {
+    width: 1rem;
+  }
+  #menu ul.components.collapsed {
+    display: none;
+  }
+  .wrapper.collapsed .toggle-button {
+    right: 1px;
+    top: 2rem;
+    transform: translateY(-50%);
+    width: 3rem;
   }
 }

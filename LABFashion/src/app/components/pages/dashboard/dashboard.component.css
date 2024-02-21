@@ -13,7 +13,10 @@ body {
   background: #FFFFFF;
   border-radius: 20px;
 }
-
+.container{
+  z-index: 7;
+  padding-bottom: 3rem;
+}
 .container img {
   display: flex;
   flex-direction: row;
@@ -61,6 +64,7 @@ h5 {
   align-items: center;
   text-align: center;
   color: #2C2C2C;
+  margin-left: 3rem;
 }
 
 .card {
@@ -83,7 +87,8 @@ h5 {
   color: #595959;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 600px) {
   .icon {
     width: 20vw;
     height: 20vw;
@@ -108,4 +113,33 @@ h5 {
     letter-spacing: 0em;
     text-align: center;
   }
+  .card
+   {
+    width: 83%; /* Define a largura das colunas como 100% para ocuparem toda a largura disponível */
+    margin-bottom: 10px; /* Adiciona um espaçamento entre os cards */
+   margin-left: 4.2rem;
+   margin-right: auto;
+   
+  }
+  h5{
+    margin-left: 1rem;
+  }
+  table th {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2C2C2C;
+    text-align: center;
+  }
+  
+  table td {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    color: #9395A3;
+  }
+  
 }

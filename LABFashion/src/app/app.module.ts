@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +19,19 @@ import { AnchorComponent } from './components/hall/anchor/anchor.component';
 import { SentLinkComponent } from './components/pages/sent-link/sent-link.component';
 import { FullComponent } from './components/hall/full/full.component';
 
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { RouterModule, Routes }   from '@angular/router';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +48,9 @@ import { FullComponent } from './components/hall/full/full.component';
     MenuComponent,
     AnchorComponent,
     SentLinkComponent,
-    FullComponent
+    FullComponent,
+
+
   ],
 
   imports: [
@@ -45,6 +59,28 @@ import { FullComponent } from './components/hall/full/full.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    BrowserAnimationsModule,
+    MatListModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    RouterModule,
+    MatExpansionModule,
+    MatTooltipModule,
+    RouterModule.forRoot([])
+
+ 
+   
   ],
 
   providers: [],
