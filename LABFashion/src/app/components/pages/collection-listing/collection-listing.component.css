@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 body {
   display: flex;
@@ -10,7 +10,7 @@ body {
   position: relative;
   width: 350px;
   height: 180px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 20px;
 }
 
@@ -24,7 +24,7 @@ table th {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  color: #2C2C2C;
+  color: #2c2c2c;
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ table td {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #9395A3;
+  color: #9395a3;
 }
 
 h5 {
@@ -47,7 +47,7 @@ h5 {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 
 .card {
@@ -56,21 +56,15 @@ h5 {
 }
 
 .heading {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
   font-weight: 600;
-  background-color: #0073CF;
+  background-color: #0073cf;
   border: none;
 }
 
-@media (max-width: 768px) {
-  .icon {
-    width: 20vw;
-    height: 20vw;
-    font-size: 10vw;
-  }
-
+@media (max-width: 600px) {
   .badge span {
     width: 30vw;
     height: 10vw;
@@ -79,5 +73,32 @@ h5 {
 
   .progress {
     height: 0.5vw;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 1.2rem;
+    margin-right: auto;
+  }
+  table th {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2c2c2c;
+    text-align: center;
+  }
+
+  table td {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #9395a3;
+  }
+  .container {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
   }
 }

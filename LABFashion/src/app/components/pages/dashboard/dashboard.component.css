@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 body {
   display: flex;
@@ -10,10 +10,10 @@ body {
   position: relative;
   width: 350px;
   height: 180px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 20px;
 }
-.container{
+.container {
   z-index: 7;
   padding-bottom: 3rem;
 }
@@ -31,7 +31,7 @@ table th {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  color: #2C2C2C;
+  color: #2c2c2c;
   text-align: center;
 }
 
@@ -41,7 +41,7 @@ table td {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #9395A3;
+  color: #9395a3;
 }
 
 h3 {
@@ -63,7 +63,7 @@ h5 {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #2C2C2C;
+  color: #2c2c2c;
   margin-left: 3rem;
 }
 
@@ -80,13 +80,12 @@ h5 {
 .text1 {
   font-weight: 600;
   font-size: 18px;
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 
 .heading {
   color: #595959;
 }
-
 
 @media (max-width: 600px) {
   .icon {
@@ -113,15 +112,13 @@ h5 {
     letter-spacing: 0em;
     text-align: center;
   }
-  .card
-   {
-    width: 83%; /* Define a largura das colunas como 100% para ocuparem toda a largura disponível */
-    margin-bottom: 10px; /* Adiciona um espaçamento entre os cards */
-   margin-left: 4.2rem;
-   margin-right: auto;
-   
+  .card {
+    width: 83%;
+    margin-bottom: 10px;
+    margin-left: 4.2rem;
+    margin-right: auto;
   }
-  h5{
+  h5 {
     margin-left: 1rem;
   }
   table th {
@@ -129,17 +126,16 @@ h5 {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    color: #2C2C2C;
+    color: #2c2c2c;
     text-align: center;
   }
-  
+
   table td {
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
     line-height: 19px;
     text-align: center;
-    color: #9395A3;
+    color: #9395a3;
   }
-  
 }

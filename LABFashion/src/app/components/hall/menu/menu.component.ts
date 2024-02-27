@@ -24,4 +24,10 @@ export class MenuComponent {
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
+
+  closeMenu() {
+    if (this.isMenuOpen) {
+      this.isMenuOpen = false;
+    }
+  }
 }

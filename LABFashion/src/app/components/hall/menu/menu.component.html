@@ -14,19 +14,19 @@
       <h1 class="p px-4">MENU</h1>
       <div class="active px-3 justify-content-left">
         <li>
-          <a routerLink="/menu/anchor/dashboard">Dashboard</a>
+          <a routerLink="/menu/anchor/dashboard" (click)="closeMenu()">Dashboard</a>
         </li>
         <li>
-          <a routerLink="/menu/anchor/collection-listing">Coleções</a>
+          <a routerLink="/menu/anchor/collection-listing" (click)="closeMenu()">Coleções</a>
         </li>
         <li>
-          <a routerLink="/menu/anchor/template-listing">Modelos</a>
+          <a routerLink="/menu/anchor/template-listing" (click)="closeMenu()">Modelos</a>
         </li>
         <li>
-          <a disabled>Obter Ajuda</a>
+          <a disabled (click)="closeMenu()">Obter Ajuda</a>
         </li>
         <li>
-          <a disabled>Comentários</a>
+          <a disabled (click)="closeMenu()">Comentários</a>
         </li>
       </div>
     </ul>
