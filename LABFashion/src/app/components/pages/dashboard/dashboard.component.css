@@ -12,6 +12,7 @@ body {
   height: 180px;
   background: #ffffff;
   border-radius: 20px;
+  max-width: 100vh;
 }
 .container {
   z-index: 7;
