@@ -45,7 +45,7 @@ body {
   justify-content: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   .navbar {
     height: 80px;
     justify-content: right;

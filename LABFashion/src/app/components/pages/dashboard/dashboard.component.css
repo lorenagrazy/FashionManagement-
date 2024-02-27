@@ -88,7 +88,7 @@ h5 {
   color: #595959;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   .icon {
     width: 20vw;
     height: 20vw;
