@@ -25,6 +25,6 @@ Angular application developed for the management of fashion models and collectio
 
 <h2 align="center"> :computer: Technologies used </h2>
 <div align="center">
-- Angular 16
+- Angular 15
 - JSON Server
 </div>
