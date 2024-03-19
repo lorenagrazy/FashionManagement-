@@ -1,12 +1,19 @@
 <div class="container mb-3 mt-5">
   <div class="col-md-10 ml-auto px-5 py-5">
-    <button routerLink="/menu/anchor/model-registration" type="button"
-      class="heading btn-lg btn-primary float-right mb-2 mt-5">Criar Modelo</button>
-    <h5 class="mb-2 mt-5 ">Modelos</h5>
-    <br>
+    <button
+      routerLink="/menu/anchor/model-registration"
+      type="button"
+      class="heading btn-lg btn-primary float-right mb-2 mt-5"
+    >
+      Criar Modelo
+    </button>
+    <br />
+    <br />
+    <h5 class="mb-2 mt-5">Modelos</h5>
+
     <div class="row">
-      <br>
-      <div class=" col-md-11 mt-3 ml-auto">
+      <br />
+      <div class="col-md-12 mt-3 ml-auto">
         <div class="card p-3 mb-2">
           <div class="d-flex justify-content-between"></div>
           <div class="mt-2 table-responsive">
@@ -21,7 +28,10 @@
                 </tr>
               </thead>
               <tbody>
-                <tr *ngFor="let modelo of modelo" (click)="irParaEdicao(modelo.id)">
+                <tr
+                  *ngFor="let modelo of modelo"
+                  (click)="irParaEdicao(modelo.id)"
+                >
                   <th scope="row"></th>
                   <td>{{ modelo.id }}</td>
                   <td>{{ modelo.nome }}</td>

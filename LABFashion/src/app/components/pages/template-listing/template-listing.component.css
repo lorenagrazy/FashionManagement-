@@ -48,11 +48,13 @@ h5 {
   align-items: center;
   text-align: center;
   color: #2c2c2c;
+  margin-top: 3rem;
 }
 
 .card {
   border: none;
   border-radius: 10px;
+  margin-top: 1rem;
 }
 
 .heading {
@@ -64,50 +66,26 @@ h5 {
   border: none;
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    width: 100%;
-    height: auto;
-    padding: 15px;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .badge span {
-    width: 30vw;
-    height: 10vw;
-    font-size: 5vw;
+@media (max-width: 450px) {
+  .heading {
+    font-size: 14px; 
+    padding: 0.5rem 1rem; 
   }
 
-  .progress {
-    height: 0.5vw;
-  }
   .card {
-    width: 100%;
-    margin-bottom: 10px;
-    margin-left: 1.2rem;
+    width: 100%; 
+    margin-left: 1.2rem; 
     margin-right: auto;
   }
+
   table th {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #2c2c2c;
-    text-align: center;
+    font-size: 14px; 
   }
 
   table td {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    color: #9395a3;
+    font-size: 12px; 
   }
-  .container {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+  h5{
+    font-size: 24px;
   }
 }

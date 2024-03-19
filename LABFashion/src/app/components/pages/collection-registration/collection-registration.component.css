@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 body {
   display: flex;
@@ -10,7 +10,7 @@ body {
   position: relative;
   width: 350px;
   height: 180px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 20px;
 }
 
@@ -21,18 +21,18 @@ button {
 }
 
 .btn-secondary {
-  background-color: #EBEBEB;
-  color: #A098AE;
+  background-color: #ebebeb;
+  color: #a098ae;
   border: none;
 }
 
 .btn-primary {
   border: none;
-  background-color: #0073CF;
+  background-color: #0073cf;
 }
 
 .form-control {
-  color: #B4B6C1;
+  color: #b4b6c1;
 }
 
 img {
@@ -49,7 +49,7 @@ h5 {
   font-weight: 600;
   font-size: 28px;
   line-height: 34px;
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 
 .card {
@@ -58,28 +58,55 @@ h5 {
 }
 
 .heading {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
   font-weight: 600;
-  background-color: #0073CF;
+  background-color: #0073cf;
   border: none;
 }
 
-@media (max-width: 768px) {
-  .icon {
-    width: 20vw;
-    height: 20vw;
-    font-size: 10vw;
+@media (max-width: 450px) {
+  .container {
+    padding: 5px;
   }
 
-  .badge span {
-    width: 30vw;
-    height: 10vw;
-    font-size: 5vw;
+  .col-md-10 {
+    padding: 0;
   }
 
-  .progress {
-    height: 0.5vw;
+  .btn {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+    margin: 3px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+
+  .card {
+    margin-left: 3.5rem;
+    margin-right: auto;
+    width: 82%;
+  }
+
+  h5 {
+    font-size: 24px;
+    margin-left: 4px;
+  }
+
+  img {
+    width: 60%;
+    height: auto;
+  }
+  .form-control {
+    font-size: 12px;
+    padding: 0.2rem;
+  }
+
+  input::placeholder {
+    font-size: 11px;
+    margin-bottom: 1px;
   }
 }
